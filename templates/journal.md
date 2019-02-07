@@ -8,8 +8,9 @@ Hour 1: I spread this hour over the course of the week, reviewing the basic comm
 
 Hours 2 and 3: Learned new command line commands using the "Learn Python the Hard Way" appendix. Mkdir (including directory names with spaces and nested directories), rmdir, cd with the relative up (../), cp, mv, less, cat. All made tons of sense. Tried pushd and popd. I need practice with it. I get it intellectually, but not deeply, as I get the other commands so far. Same with recursive commands.
 
-Hour 4: Played around with Git, using the resource Patrick gave us (so, Virtual Studio Code and checking to see that I had Git still from the DH Field Kit). Did a little markup in Virtual Studio Code.
+Hours 4 and 5: Played around with Git, using the resource Patrick gave us (so, Virtual Studio Code and checking to see that I had Git still from the DH Field Kit). Did a little markup in Virtual Studio Code. Tried the challenges and made up some of my own.
 
-Hour 5: ''
-Hour 6: ''
-Hour 7: Should have given up, but got the script eworking, though I'm still not sure what went wrong.
+Hours 6: Reviewed everything to see what I could do from memory and what needed extra practice. Getting faster, which feels good. Still ignoring pushd and popd. Often forgetting to push files to my Github repository.
+
+Hour 7ish: Getting to Carnegie Hall: practice, practice, practice
+
