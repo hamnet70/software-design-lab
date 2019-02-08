@@ -19,5 +19,10 @@ Hour 7ish: Getting to Carnegie Hall: practice, practice, practice
 
 Overall:
 
-Hour 1+: As was the case last week, I spread this hour over the course of the week, reviewing the basic and new command line commands, VS Code, and the git commit and push processes. 
+
+
+<font color="pink">Hour 1+</font>: As was the case last week, I spread this hour over the course of the week, reviewing the basic and new command line commands, VS Code, and the git commit and push processes. Even played around with some HTML in markdown (see pale yellow text below).
+
+
+<font color="paleyellow">**Questions for Patrick**</font>: It seems necessary to install the code command every time VS Code is open or a new Terminal session is open. Is that true? Do you just leave both open all the time?
 
