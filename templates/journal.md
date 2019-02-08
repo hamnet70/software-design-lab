@@ -15,7 +15,6 @@ Hours 6: Reviewed everything to see what I could do from memory and what needed 
 Hour 7ish: Getting to Carnegie Hall: practice, practice, practice
 
 
-
 ## Week Three (2/7 to 2/12)
 
 Overall:
