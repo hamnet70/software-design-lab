@@ -14,3 +14,11 @@ Hours 6: Reviewed everything to see what I could do from memory and what needed 
 
 Hour 7ish: Getting to Carnegie Hall: practice, practice, practice
 
+
+
+## Week Three (2/7 to 2/12)
+
+Overall:
+
+Hour 1+: As was the case last week, I spread this hour over the course of the week, reviewing the basic and new command line commands, VS Code, and the git commit and push processes. 
+
