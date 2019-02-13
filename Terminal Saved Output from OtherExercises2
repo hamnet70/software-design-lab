@@ -1,0 +1,48 @@
+38
+>>> question = "What's your favorite tv show?"
+>>> answer = raw_input()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'raw_input' is not defined
+>>> quit()
+FL3568:software-design-lab khammond$ ls
+OtherExercise.py	ex4.py			ex8.py
+OtherExercises2.py	ex5.py			instructions
+README.md		ex6.py			templates
+ex1_3.py		ex7.py
+FL3568:software-design-lab khammond$ python OtherExercises2.py 
+What is your favorite tv show?
+Traceback (most recent call last):
+  File "OtherExercises2.py", line 5, in <module>
+    answer = raw_input()
+NameError: name 'raw_input' is not defined
+FL3568:software-design-lab khammond$ python OtherExercises2.py 
+What is your favorite tv show?
+Downton Abbey
+You had Downton Abbey! That sounds delicious!
+FL3568:software-design-lab khammond$ clear
+
+FL3568:software-design-lab khammond$ python OtherExercises2.py 
+What is your favorite tv show?
+Friends
+You watch Friends! I love that show!
+FL3568:software-design-lab khammond$ python OtherExercises2.py 
+What is your favorite tv show?
+SNL
+You watch SNL! I love that show!
+What is your favorite food?
+pizza
+You eat pizza! I love that too!
+FL3568:software-design-lab khammond$ 
+
+
+
+
+
+
+
+
+
+
+
+

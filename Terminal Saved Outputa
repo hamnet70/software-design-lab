@@ -1,0 +1,60 @@
+Last login: Mon Feb 11 21:12:18 on ttys000
+pwd
+FL3568:~ khammond$ pwd
+/Users/khammond
+FL3568:~ khammond$ ls
+Adobe Photoshop Elements 13	Movies
+Applications			Music
+Creative Cloud Files		Pictures
+Desktop				Projects
+Documents			Public
+Downloads			Sandbox
+Dropbox				Sites
+Dropbox (Old)			Things
+Google Drive			Zotero
+Library
+FL3568:~ khammond$ cd Projects/
+FL3568:Projects khammond$ ls
+software-design-lab
+FL3568:Projects khammond$ cd software-design-lab/
+FL3568:software-design-lab khammond$ ls
+OtherExercise.py
+OtherExercises2.py
+OtherExercises2_Extensions.py
+README.md
+Terminal Saved Output from OtherExercises2
+ex1_3.py
+ex4.py
+ex5.py
+ex6.py
+ex7.py
+ex8.py
+instructions
+templates
+FL3568:software-design-lab khammond$ cat ex5.py
+
+name = 'Zed A. Shaw'
+age = 35 #not a lie
+height = 74 #in inches
+weight = 180 #in pounds
+eyes = 'Blue'
+teeth = 'White'
+hair = 'Brown'
+height_in_cm = height * 2.54
+weight_in_kilograms = weight / 2.205
+
+print("Let's talk about %s." % name)
+print("He's %d inches tall." % height)
+print("When he's in London, he is %d centimetres tall. Wow." % height_in_cm)
+print("He's %d pounds heavy." % weight)
+print("Actually, that's not too heavy.")
+print("In London, he sounds lighter, as he weighs %d kilograms." % weight_in_kilograms)
+print("He's got %s eyes and %s hair." % (eyes, hair))
+print("His teeth are usually %s depending on the coffee." % teeth)
+
+print("If I add %d, %d, and %d, I get %d." %(
+    age, height, weight, age + height + weight))
+
+FL3568:software-design-lab khammond$ ex5.py python
+-bash: ex5.py: command not found
+FL3568:software-design-lab khammond$ 
