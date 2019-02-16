@@ -41,14 +41,21 @@ Hour 11: After a day off, practiced python in termal, including variable use, ba
 
 
 
+## Week Four (2/13 to 2/20)
 
+Hour 1: Added comments to talk myself through the hello.py file we created in class. Practiced (in postclass_practice.py) using three single quotes to extend the print command across several lines, using a for loop to print list items. Included in my program some of the techniques I found on my own last week: using %s to insert a variable string within an invariable string, appending a list with user input. Really fun. Continued to try to imitate some of the code that I think is behind a Starbucks receipt I got last week. Was less successful there.
+
+Hour 2: Got the Starbucks program to work! Limited functionality, as it just asks the user what they want to order over and over and then prints the order when they are done. Took me awhile to figure out that a while loop would allow the user to add infinite items. So fun. Annotated my code to solify my understanding.
+
+Hour 3: Added a random feature to print at the bottom of the "receipt" a send-off. Tried unsuccessfully to include a string in those random message strings. Answered a question I've been wondering about: does it matter if I choose to use single quotes or double quotes around strings. My instinct was to use doubles, but singles take one fewer keystroke. However, my thanks strings included contractions, so I had to use doubles. (Technically, I suppose I could try a " in the contraction, but since one of my goals is to be effcient, and I type quickly and automatically, I will lose less time if I just stick to "" for strings.) 
+
+Hour 4: Updated my postclass_practice.py document to include a while loop that prompts the user to name as many poets as they can, appending it to a list of poets. The program then gets the length of the list (minus the prepopulated items) and uses an if, elif series of conditionals to provide feedback on how many poets the user could name. This took longer than it sounds because I wrongfully thought that len() would correspond to the numbering of items in a list, which starts with 0. So, I had an if number <=0 line if the user couldn't name any additional poets, but I needed to change it to if number <=1. It took me awhile to figure that out.
 
 
 
 <font color="#FF0134">**Questions for Patrick**</font>
-- It seems necessary to install the code command every time VS Code is open or a new Terminal session is open. Is that true? Do you just leave both open all the time?
+
 - While html tags seem to work in VS Code, they don't seem to work when uploaded to git hub. Thoughts?
-- The tutorial makes a big-ass deal out of *not* using Python 3, which came with my Anaconda download. So, should I uninstall and install Python 2 instead? (I've noticed that Python 3 assumes floating point numbers.)
 - What do you call using %d or %s in a string? (I'd just like to know how to talk about what I know how to do.)
 - In exercise 7, the author used a comma after the first of two print commands to concatenate them. It doesn't work in Python 3 (and I tried the comma inside and out of the parens). Instead, I have to add a third print line that explicitly concatenates them. Thoughts?
 - The first time I ran a program with user input, Terminal prompted me to save the output. It did not on subsequent user-input programs. Do you know why?
