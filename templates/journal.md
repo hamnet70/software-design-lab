@@ -21,7 +21,7 @@ Overall:
 
 
 
-<font color="pink">Hour 1+</font>: As was the case last week, I spread this hour over the course of the week, reviewing the basic and new command line commands, VS Code, and the git commit and push processes. Even played around with some HTML in markdown (see red text below).
+<font style="color:pink;">Hour 1+</font>: As was the case last week, I spread this hour over the course of the week, reviewing the basic and new command line commands, VS Code, and the git commit and push processes. Even played around with some HTML in markdown (see red text below).
 
 Hour 2: Installed Anaconda and began the Python tutorial on the syllabus to the first three exercises. Wonderered if I should heed the author's constant plea not to use Python 3, which came with the Anaconda download. As I played, I was reminded of how much proofreading goes into programming. AND, the difference between an expression to be solved (5 + 2) and one to be evaluated as true or false (5 > 2) is significant, as is every single keystroke.
 
@@ -51,9 +51,13 @@ Hour 3: Added a random feature to print at the bottom of the "receipt" a send-of
 
 Hour 4: Updated my postclass_practice.py document to include a while loop that prompts the user to name as many poets as they can, appending it to a list of poets. The program then gets the length of the list (minus the prepopulated items) and uses an if, elif series of conditionals to provide feedback on how many poets the user could name. This took longer than it sounds because I wrongfully thought that len() would correspond to the numbering of items in a list, which starts with 0. So, I had an if number <=0 line if the user couldn't name any additional poets, but I needed to change it to if number <=1. It took me awhile to figure that out.
 
+Hours 5 & 6: After doing the reading (which I am not including in these hours, of course), I decided to preview next week's content on HTML and CSS with a real eye toward accessibility. It's one of my course goals anyway, as is understanding CSS with less of a tinkerer's mindset. I know a little HTML, so I am already kicking myself for not getting how important it is to include alt tags. Did the first 9 chapters of the w3schools tutorial (see my Preview.html doc in the HTML and CSS folders). Highlighted in orange in my notes tags or techniques that would clearly impact accessibility, such as using headings just for headings (rather than for emphasis) to create an apt page outline or using relative font sizes rather than fixed ones.
 
 
-<font color="#FF0134">**Questions for Patrick**</font>
+
+
+
+<font style="color:blue;">**Questions for Patrick**</font>
 
 - While html tags seem to work in VS Code, they don't seem to work when uploaded to git hub. Thoughts?
 - What do you call using %d or %s in a string? (I'd just like to know how to talk about what I know how to do.)
