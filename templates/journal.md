@@ -17,7 +17,7 @@ Hour 7ish: Getting to Carnegie Hall: practice, practice, practice
 
 ## Week Three (2/7 to 2/12)
 
-Overall:
+Overall: This week was great fun, aside from a git error that had me banging my head against a wall for quite some time. Exploring python was pretty thrilling, especially as I learned some tricks to coding more efficiently (such as using %s to insert strings into strings rather than "" + x + ""). I created a few programs that used user input in some really basic ways--evaluating them with elif statements. I'm continuing to add comments to my work after playing, just to review and try to make concepts stick. 
 
 
 
@@ -43,6 +43,8 @@ Hour 11: After a day off, practiced python in termal, including variable use, ba
 
 ## Week Four (2/13 to 2/20)
 
+Overall: The work we did in class made me eager to explore lists futher. I'd been trying to create a program to mimic a Starbucks receipt, and lists seemed to be the key. Appending user input to lists via a loop made it work pretty well. Switched gears to preview next week's material and loved customizing web pages. The reading really helped me frame my HTML and CSS tinkering as a chance to increase accessibility through consistent, thoughtful coding.
+
 Hour 1: Added comments to talk myself through the hello.py file we created in class. Practiced (in postclass_practice.py) using three single quotes to extend the print command across several lines, using a for loop to print list items. Included in my program some of the techniques I found on my own last week: using %s to insert a variable string within an invariable string, appending a list with user input. Really fun. Continued to try to imitate some of the code that I think is behind a Starbucks receipt I got last week. Was less successful there.
 
 Hour 2: Got the Starbucks program to work! Limited functionality, as it just asks the user what they want to order over and over and then prints the order when they are done. Took me awhile to figure out that a while loop would allow the user to add infinite items. So fun. Annotated my code to solify my understanding.
@@ -52,6 +54,12 @@ Hour 3: Added a random feature to print at the bottom of the "receipt" a send-of
 Hour 4: Updated my postclass_practice.py document to include a while loop that prompts the user to name as many poets as they can, appending it to a list of poets. The program then gets the length of the list (minus the prepopulated items) and uses an if, elif series of conditionals to provide feedback on how many poets the user could name. This took longer than it sounds because I wrongfully thought that len() would correspond to the numbering of items in a list, which starts with 0. So, I had an if number <=0 line if the user couldn't name any additional poets, but I needed to change it to if number <=1. It took me awhile to figure that out.
 
 Hours 5 & 6: After doing the reading (which I am not including in these hours, of course), I decided to preview next week's content on HTML and CSS with a real eye toward accessibility. It's one of my course goals anyway, as is understanding CSS with less of a tinkerer's mindset. I know a little HTML, so I am already kicking myself for not getting how important it is to include alt tags. Did the first 9 chapters of the w3schools tutorial (see my Preview.html doc in the HTML and CSS folders). Highlighted in orange in my notes tags or techniques that would clearly impact accessibility, such as using headings just for headings (rather than for emphasis) to create an apt page outline or using relative font sizes rather than fixed ones.
+
+Hour 7: Practiced as much HTML as I could without looking at my notes. Accidentally found the awesome color prompts and color picker in VS Code to choose background and font colors. Then did the next four chapters in w3schools, playing with formatting, quotations, comments, and colors. Saved CSS for the next day, as my brain was fried.
+
+Hour 8: Did a quick python refresher in terminal, creating lists and playing with them, running python programs I created, and quitting and clearing. Continued the HTML tutorial reading and practicing the HTML CSS, Links, and half of the Images sections. I see some issues of responsive design here--specifying body padding, for example, in percents rather than pixels, and being sure to set image sizes to avoid browser or stylesheet overrides. I got stuck on a couple of items and never figured out why my image link's border could not be overridden by the border:0 style attribute.
+
+Hour 9: Did 43 of the 90 exercises (just questions really) on W3schools for practice. 
 
 
 
