@@ -62,7 +62,25 @@ Hour 8: Did a quick python refresher in terminal, creating lists and playing wit
 Hour 9: Did 43 of the 90 exercises (just questions really) on W3schools for practice. 
 
 
+## Week Five (2/21 to 2/27)
 
+Overall: 
+
+Hour 1: Reviewed the HTML and CSS work from class, adding comments to what we did to refresh my memory. Learned that CSS sheets use /* and */ for comments. Tried setting up a new site on the Oscars from scratch. Did well on the HMTL, did abysmally on the CSS stylesheet.
+
+Hour 2: Given the trouble with CSS, I took the Khan Academy lessons on CSS. HUGE help. The most important take-away is that the CSS that you can put inside a style tag on an individual webpage is the same code you put in a style sheet. It's just that the former just treats the content on that page, and the latter can apply to multiple pages. (I don't know why I thought the syntax was different.) Got some good practice with ids, and restyled my Oscars website stylesheet from scratch, including ids in my bulleted lists to single out my personal favorites. Learned about classes. (Interestingly, the narrator of the Khan lessons said that every id had to be unique, and that you should use classes for multiple instances of the same id, but I found that multiple ids worked anyway. Still, I'll use classes, so I can chip away at my goal of being a lean programmer.)
+
+Hour 3: Trying to keep my fragile, new python skills sharp, I created a python script to calculate hotel bills based on user input on the type of room they had and the length of their stay. Got stuck for a bit on how to distinguish user data as a string or a float decimal. Because the decimal was part of a multi-pronged formula, it took me awhile to realize that not only was my data type off, but I was missing a parenthesis. Turning half the program into comments while I debugged line by line really helped.
+
+Hour 4: Now with a greater handle on CSS from Khan Academy, I returned to the W3Schools tutorials, doing the first six lessons and exercises. In addition to marking notes in orange that address accessibility, I have started marking notes in green that chip away at another of my class goals: coding efficiently. In these lessons, for example, I learned two ways to code CSS more efficiently: 1) grouping selectors that get the same treatment, and 2) using background shorthand to cover all of the properties of the background with one line.
+
+Hour 5: Continued the CSS W3Schools tutorial doing the next six lessons and their exercises. Again, found shorthand code for a host of declarations. Played with borders, margins, padding, height/widgth, and outlining. Learned the box model, which helped me visualize sections of web pages. Applied some of the techniques to my Oscars page. It looks garish, but displays a lot of CSS!
+
+Hour 6: Started to preview Bootstrap using W3Schools. Cool, but I realized that I hadn't learned about divisions and tables in HTML yet, and both showed up immediately (along with classes), so I headed back to the HTML tutorial. Played with tables and made a kinda cool one for my hideous Oscars website, with alternating background colors for every even row.
+
+Hour 7: Returned to the HTML lessons to tackle lists and, more importantly, divisions and classes/ids. Here's where I really started to see how a website can start to be designed, thinking in terms of blocks of information that get styled in ways that cue the user. Also checked out iframes (very cool). I transferred all the lessons to my now super-garish Oscars page. (Wasn't able to embed in an iframe external webpages, but was able to embed my own--perhaps because my site is currently still local?)
+
+Hour 8: Went back to preview bootstrap with some success. Created a new folder to house my bootstrap play. Created a simple site with one banner container, three 4-col span columns set to default for a tablet, and added a table. Only the table class worked. Table-striped and table-hover did not.
 
 
 <font style="color:blue;">**Questions for Patrick**</font>
@@ -71,6 +89,7 @@ Hour 9: Did 43 of the 90 exercises (just questions really) on W3schools for prac
 - What do you call using %d or %s in a string? (I'd just like to know how to talk about what I know how to do.)
 - In exercise 7, the author used a comma after the first of two print commands to concatenate them. It doesn't work in Python 3 (and I tried the comma inside and out of the parens). Instead, I have to add a third print line that explicitly concatenates them. Thoughts?
 - The first time I ran a program with user input, Terminal prompted me to save the output. It did not on subsequent user-input programs. Do you know why?
+- I don't understand the overflow: hidden; line in this tutorial exercise: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu When I comment it out (which I do sometimes to analyze the role a line has) the entire menu goes away. 
 
 
 
