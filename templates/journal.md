@@ -64,7 +64,7 @@ Hour 9: Did 43 of the 90 exercises (just questions really) on W3schools for prac
 
 ## Week Five (2/21 to 2/27)
 
-Overall: 
+Overall: I tried this week to balance review (terminal, python), deeper exploration (html, css), and preview (bootstrap). I'm starting to see the pyramid relationship between the strong, unmistakable base of html, the quirkier css, and (because some of the w3schools exercises included it) the far more error-prone javascript. Bootstrap is really cool, and I can see how it jumpstarts responsive websites already, but I also see how tricky it is (at least for me at this early stage) to design well, with blocks aligning. The mini-boostrap page I created looks great stacked, but looks terrible full screen! 
 
 Hour 1: Reviewed the HTML and CSS work from class, adding comments to what we did to refresh my memory. Learned that CSS sheets use /* and */ for comments. Tried setting up a new site on the Oscars from scratch. Did well on the HMTL, did abysmally on the CSS stylesheet.
 
@@ -82,13 +82,34 @@ Hour 7: Returned to the HTML lessons to tackle lists and, more importantly, divi
 
 Hour 8: Went back to preview bootstrap with some success. Created a new folder to house my bootstrap play. Created a simple site with one banner container, three 4-col span columns set to default for a tablet, and added a table. Only the table class worked. Table-striped and table-hover did not.
 
+First half of hour 9: Challenged myself in python again to update my Starbucks receipt program to mimic the sticker that was on my coffee. Was not successful, though I made the program a little more elegant with delayed responses (thanks to time.sleep(1)) and presenting a number of total items ordered to the user by getting the length of the list. Learned the hard way that variables in python can't have dashes, so swapped to underscores. (Id names in CSS can, though, so I'd gotten in a bad habit!)
 
-<font style="color:blue;">**Questions for Patrick**</font>
+
+
+## Week Six (2/28 to 3/6)
+
+Overall: This week, I explored Jekyll a little, and in doing so, realized I was becoming a bit of a make-it-do-something-cool junkie. After all, in just six weeks, we've been introduced to command line, markdown, python, HTML (which I knew a little of), CSS, and now liquid. And even though I've practiced every week, I've been practicing what I <i>already</i> know rather than deepening and testing my programming agility. So, this week brought back to me the line of Shakespeare's Friar Lawrence who says something like, "Wise and slow, they stumble that run fast."
+
+Hour 1: Intrigued by Jekyll, I found a series of video tutorials by Mike Dane and watched the first ten. They assumed the Jekyll themes, not the blank site we created, so I didn't get to try much. Still--very helpful, as the videos explained the importance of naming post files YYYY-MM-DD-title.md and how Jekyll translates that into subfolders. They also demystified the config file that others in class mentioned they had accidentally downloaded by creating a themed Jekyll site.
+
+Hours 2 and 3: Found some liquid code similar to what Patrick did in class--a for loop that, for every post in the posts folder, provided a link to that post. It worked. Watched five more tutorials from Mike Dane about getting Jekyll themes and customizing them, creating and using includes, and creating variables. Practiced creating my own theme and displaying variables such as the post title and author. Took me forever, but I got it, though I never managed to create a customized layout that referenced my stylesheet. Learned about passing variables to includes, though!
+
+Hours 4 and 5: Decided to review python, and found a real weakness in my manipulation of variable types. Did some digging to learn the term "casting," which I guess I've done in the past, but didn't truly understand. I went to w3schools to practice working with data types and lists, doing the exercises provided. Then, I found practicepython.org (really), and found a host of beginner challenges and did 6 of the first 7. Looking at their solutions helped me see where I was over coding and where I was coding leanly, which is one of my course goals, so that was helpful. In fact, I'm most proud of my list-compare.py program, which compared two lists and printed the shared, nonredundant elements, which I managed in just seven lines of code. (Maybe there's a shorter way, but it felt pretty lean. There is no solution posted for that one, so I can't check.) I learned that I need, now, to focus on list comprehension for next time.
+
+Hour 6: Continued to work through the extra python exercises, creating a truly lame (but working!) two-player rock-paper-scissors game, then adapted it so the user can play against the computer. Worked on a number guessing game and missed some obvious errors, like a missing end parenthesis that took forever to find. Then, realized that my loop included the randomizer, so every guess, the number changed. Still working on it. I refuse to look at the solution!
+
+Hour 7: Victory! After lots of truly stupid mistakes, I not only got the number guessing game to work, but I extended the range (so easy with the list(range(x, y)) feature), tracked and printed the number of guesses, and gave the option of continuing indefinitely. I'm learning that reading the code out loud to myself really helps. For example, I had the random number chosen outside of the "play again" loop, so the number was the same every time--something I didn't notice when the range was 1 to 9 and I was tweaking after each try, but it was painfully obvious when the range was 1 to 100 and the first three "random" numbers were 20. I'm eager to get better at predicting. My code is staying pretty lean, but when I looked at the solution the site proposes (after making my own working version), I do see that Boolean logic could have combined a few of my if and elif statements.
+
+Hour 8: Worked on a very clunky python program to determin if a user-provided number was a prime number. Very inelegant, unlean coding, and I continue to make really stupid data type assumptions and other little errors. I am getting better, though, at taking the time to read and think through the error messages, which is helping. I looked at a possible solution, which was far more thorough (mine just checked if there was at least one more factor other than 1 and the number) using list comprehension, which I clearly need to coninute to...you know...comprehend.
+
+Hour 9ish: Worked on a python program to print the first and last items of a given list. I challenged myself and allowed the user to add as many items to the list as she cared to. It worked with far less troubleshooting than I've needed in the past, which is good, because it required list comprehension.
+
+
+
+<font style="color:blue;">**Old But Lingering Questions for Patrick**</font>
 
 - While html tags seem to work in VS Code, they don't seem to work when uploaded to git hub. Thoughts?
 - What do you call using %d or %s in a string? (I'd just like to know how to talk about what I know how to do.)
-- In exercise 7, the author used a comma after the first of two print commands to concatenate them. It doesn't work in Python 3 (and I tried the comma inside and out of the parens). Instead, I have to add a third print line that explicitly concatenates them. Thoughts?
-- The first time I ran a program with user input, Terminal prompted me to save the output. It did not on subsequent user-input programs. Do you know why?
 - I don't understand the overflow: hidden; line in this tutorial exercise: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu When I comment it out (which I do sometimes to analyze the role a line has) the entire menu goes away. 
 
 

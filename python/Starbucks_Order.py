@@ -1,7 +1,8 @@
 # Trying to imitate the Starbucks receipt
 
-# Imports the library random
+# Imports the random and time libraries
 import random
+import time
 
 # Defines a list called order
 order = []
@@ -32,12 +33,22 @@ while response == "y":
 # Prints the user's name in the string "user name's order"
 print("%s's order:" % name)
 
+number_of_items = len(order)
+
+print("You ordered a total of %d items" %number_of_items)
+time.sleep(1)
+
 # Uses a for loop to print each item in the list, regardless of the number of items
 for x in order:
     print(x)
+    time.sleep(1)
+    
+
 
 # Prints a random string from the list thanks
 print(random.choice(thanks))
+
+
 
 
 
