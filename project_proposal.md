@@ -1,4 +1,6 @@
-# Description
+# Kelly's Project Proposal
+
+## Description
 Development team needed to create a simple web app to track the estimated water intake of Alzheimer’s patients as their myriad caregivers, family and professionals, attend to them. 
 
 ## Requirements
