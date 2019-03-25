@@ -4,8 +4,8 @@
 
 def gen_seats(row_letter, seats_in_row):
 
-    seats = []
-
+    possible_seats = []
+    # The next 4 rows of code I got online. My code picks back up at line 14
     def row_range(c1, c2):
         """Generates the characters from `c1` to `c2`, inclusive."""
         for c in range(ord(c1), ord(c2)+1):
@@ -15,10 +15,10 @@ def gen_seats(row_letter, seats_in_row):
 
     while seat_num != seats_in_row:
         for x in row_range('a', str(row_letter)):
-            seats.append(x+str(seat_num))
+            possible_seats.append(x+str(seat_num))
         seat_num += 1
 
-    return seats
+    return possible_seats
 
 
 def is_premium(seat_num, user_seats_in_row):
@@ -26,6 +26,8 @@ def is_premium(seat_num, user_seats_in_row):
         return true
     else:
         return false
+
+
 
 
 user_last_row = str(input("What is the last letter of rows in your theater? "))

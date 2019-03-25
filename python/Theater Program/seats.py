@@ -26,6 +26,7 @@ while seat_num !=11:
 
 print(seats)
 
+def if_premium(seat)
 for x in seats:
     if x[0] == "a" or x[0] == "t" or int(x[1]) < 6:
         premium_seats.append(x)

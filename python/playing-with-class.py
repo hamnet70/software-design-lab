@@ -67,3 +67,5 @@ print(f"Natalie's gpa is now {workshop_1.gpa}")
 print(f"Does Natalie get extended time? Answer: {workshop_1.ex_time}.")
 print(f"There are now {workshop.num_of_ex_time_students} extra-time students in the class. ")
 
+
+

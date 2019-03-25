@@ -41,7 +41,19 @@ class balcony(seats):
 
     def __init__(self, row, seat, seating_cap=None):
         super().__init__(row, seat)
+
+
+# Working on this section
+#def seating_cap(level):
+#    row_max = input("Assuming your first row of seats is row a, what letter is the last row of seats? (Currently, this program can only take up to letter z:  "))
+#    seat_max = input("How many seats are there per row? "))
+    
+
+
         
+
+
+
     
 
 # All of the code below is just for testing
@@ -50,27 +62,27 @@ mezz_1 = mezz("b", 4)
 balcony_1 = balcony("f", 9)
 
 
-print(orchestra_1.location)
-print(orchestra_1.price)
-print(orchestra_1.is_available)
-print(mezz_1.location)
-print(mezz_1.price)
-print(mezz_1.is_available)
-print(balcony_1.location)
-print(balcony_1.price)
-print(balcony_1.is_available)
+#print(orchestra_1.location)
+#(orchestra_1.price)
+#(orchestra_1.is_available)
+#(mezz_1.location)
+#(mezz_1.price)
+#(mezz_1.is_available)
+#(balcony_1.location)
+#(balcony_1.price)
+#(balcony_1.is_available)
 
 orchestra_1.is_purchased()
 
-print(orchestra_1.location)
-print(orchestra_1.price)
-print(orchestra_1.is_available)
-print(mezz_1.location)
-print(mezz_1.price)
-print(mezz_1.is_available)
-print(balcony_1.location)
-print(balcony_1.price)
-print(balcony_1.is_available)
+#(orchestra_1.location)
+#(orchestra_1.price)
+#(orchestra_1.is_available)
+#(mezz_1.location)
+#(mezz_1.price)
+#(mezz_1.is_available)
+#(balcony_1.location)
+#(balcony_1.price)
+#(balcony_1.is_available)
 
 
 

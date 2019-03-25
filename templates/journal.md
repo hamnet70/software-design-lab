@@ -152,4 +152,12 @@ Hour 8: Tried to convert my functions-based simple theater seating program to a 
 Hours 9 and 10: Eager to understand how to instantiate objects from user-driven parameters, I looked for real-world examples of object instantiation and found https://realpython.com/python3-object-oriented-programming/. While it didn't answer my question, it certainly helped me move my program forward. I realized that I had mis-conceptualized my base class as an orchestra seat. Instead, I changed it to seats and included the subclasses of orchestra, mezzanine and balcony. That change allowed me to really think about what attributes and methods should be true for any seat in a theater, which helped me radically streamline my code (one of my goals!). So, in addition to the attributes of seat_no, row, and location, and in addition to the subclass variables of price and name, I created a class method for marking seats as available and purchased (including returning tickets). I am also still very much in the thinking stage of how I can create the parameters for each level of possible row and seat count. Next go-round, I'll try to build in that functionality myself before asking for those limits from the user.
 
 
+## Week Nine (3/21 to 3/27)
+
+Overall: 
+
+Hour 1: Returning to my theater program, I began to work on the ability for the user to specify the seating capacity of each level of her theater, wishing I knew how to make a small program to create the possible seats and then my class-oriented program to assign those possible seats to users who purchased them. Fortunately, I looked at what was on deck for this upcoming week, SQL, and it seemed to be the missing link (literally and figuratively). 
+
+Hour 2: Dove into SQL. Oy. For the first time in this course, my brain (and Zed Shaw!) let me down. I couldn't deduce the logic of the language, and it took me a while to simply figure out where I was working. Surprisingly, the Shaw didn't cover initially some of the essentials of the big picture of SQL -- for example, it seems as though the .db files I create are the architecture, or ".schema," of the database, but that ultimately those files get translated to a .sql file. Still not really sure what I mean by that, but two files seem to be required. So far, I have created a few databases and have learned to use the insert command to add data. I've also explored the five data types (or, storage types) for SQL, and am wondering if BLOB can hold images?
+
 
