@@ -1,0 +1,239 @@
+Last login: Wed Mar 27 15:45:33 on ttys000
+cdFL3568:~ khammond$ cd P
+Pictures/ Projects/ Public/   
+FL3568:~ khammond$ cd Projects/software-design-lab/sq
+-bash: cd: Projects/software-design-lab/sq: No such file or directory
+FL3568:~ khammond$ cd Projects/software-design-lab/sql/
+FL3568:sql khammond$ ls
+cars.db	ex2.db	ex2.sql
+FL3568:sql khammond$ cat ex2.d
+cat: ex2.d: No such file or directory
+FL3568:sql khammond$ cat ex2.db
+?x??f!!?tableperson_petperson_petCREATE TABLE person_pet (
+    person_id INTEGER,
+    pet_id INTEGER
+)?wtablepetpetCREATE TABLE pet (
+    id INTEGER PRIMARY KEY,
+    nickname TEXT,
+    breed TEXT,
+    age INTEGER,
+    dead INTEGER
+)??etablepersonpersonCREATE TABLE person (
+    id INTEGER PRIMARY KEY,
+    first_name TEXT,
+    last_name TEXT,
+    age INTEGER
+FL3568:sql khammond$ sqlite3 
+SQLite version 3.26.0 2018-12-01 12:34:55
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .schema
+sqlite> .schmea
+Error: unknown command or invalid arguments:  "schmea". Enter ".help" for help
+sqlite> .schema
+sqlite> .quit
+FL3568:sql khammond$ sqlite3 ex2.db
+SQLite version 3.26.0 2018-12-01 12:34:55
+Enter ".help" for usage hints.
+sqlite> .schema
+CREATE TABLE person (
+    id INTEGER PRIMARY KEY,
+    first_name TEXT,
+    last_name TEXT,
+    age INTEGER
+);
+CREATE TABLE pet (
+    id INTEGER PRIMARY KEY,
+    nickname TEXT,
+    breed TEXT,
+    age INTEGER,
+    dead INTEGER
+);
+CREATE TABLE person_pet (
+    person_id INTEGER,
+    pet_id INTEGER
+);
+sqlite> .quit
+FL3568:sql khammond$ sqlite3 ex2.db < ex3.sql
+FL3568:sql khammond$ sqlite3 ex2.db < ex3.sql
+Error: near line 1: UNIQUE constraint failed: person.id
+Error: near line 2: UNIQUE constraint failed: person.id
+Error: near line 3: UNIQUE constraint failed: person.id
+Error: near line 4: UNIQUE constraint failed: pet.id
+Error: near line 5: UNIQUE constraint failed: pet.id
+Error: near line 6: UNIQUE constraint failed: pet.id
+FL3568:sql khammond$ sqlite3 ex2.db < ex3.sql
+Error: near line 1: UNIQUE constraint failed: person.id
+Error: near line 2: UNIQUE constraint failed: person.id
+Error: near line 3: UNIQUE constraint failed: person.id
+Error: near line 5: UNIQUE constraint failed: pet.id
+Error: near line 6: UNIQUE constraint failed: pet.id
+Error: near line 7: UNIQUE constraint failed: pet.id
+Error: near line 9: no such table: pet_person
+Error: near line 10: no such table: pet_person
+Error: near line 11: unrecognized token: ":"
+FL3568:sql khammond$ sqlite3 ex2.db < ex3.sql
+Error: near line 1: UNIQUE constraint failed: person.id
+Error: near line 2: UNIQUE constraint failed: person.id
+Error: near line 3: UNIQUE constraint failed: person.id
+Error: near line 5: UNIQUE constraint failed: pet.id
+Error: near line 6: UNIQUE constraint failed: pet.id
+Error: near line 7: UNIQUE constraint failed: pet.id
+Error: near line 11: unrecognized token: ":"
+FL3568:sql khammond$ sqlite3 ex2.db < ex3.sql
+Error: near line 1: UNIQUE constraint failed: person.id
+Error: near line 2: UNIQUE constraint failed: person.id
+Error: near line 3: UNIQUE constraint failed: person.id
+Error: near line 5: UNIQUE constraint failed: pet.id
+Error: near line 6: UNIQUE constraint failed: pet.id
+Error: near line 7: UNIQUE constraint failed: pet.id
+FL3568:sql khammond$ sqlite3 ex3.sql
+SQLite version 3.26.0 2018-12-01 12:34:55
+Enter ".help" for usage hints.
+sqlite> .schema
+Error: file is not a database
+sqlite> .quit
+FL3568:sql khammond$ sqlite3 ex3.db
+SQLite version 3.26.0 2018-12-01 12:34:55
+Enter ".help" for usage hints.
+sqlite> .schema
+sqlite> .quit
+FL3568:sql khammond$ sqlite3 ex2.db
+SQLite version 3.26.0 2018-12-01 12:34:55
+Enter ".help" for usage hints.
+sqlite> .quit
+FL3568:sql khammond$ sqlite3 ex2.db < ex2.sql
+FL3568:sql khammond$ sqlite3 ex2.db
+SQLite version 3.26.0 2018-12-01 12:34:55
+Enter ".help" for usage hints.
+sqlite> select * from person;
+0|Kelly|Hammond|48
+1|Hasib|Ikramullah|43
+2|Kim|Roessler|50
+sqlite> select name, age from pet;
+Error: no such column: name
+sqlite> select id, age from pet
+   ...> ;
+0|3
+1|7
+2|1
+sqlite> select name from pet;
+Error: no such column: name
+sqlite> select nickname, age from pet;
+Spot|3
+Fifi|7
+Popeye|1
+sqlite> select nickname, age from pet where dead = 0
+   ...> ;
+Spot|3
+Fifi|7
+sqlite> select * from person where first_name != "Hasib";
+0|Kelly|Hammond|48
+2|Kim|Roessler|50
+sqlite> select * from pet where age > 2;
+0|Spot|Boxer|3|0
+1|Fifi|Poodle|7|0
+sqlite> select * from pet where age >3;
+1|Fifi|Poodle|7|0
+sqlite> select * from person where age < 48;
+1|Hasib|Ikramullah|43
+sqlite> select * from person where age > 25 AND name[0] =! "H"
+   ...> ;
+Error: near "[0]": syntax error
+sqlite> .quit
+FL3568:sql khammond$ sqlite3 -column - header ex2.db
+sqlite3: Error: unknown option: -
+Use -help for a list of options.
+FL3568:sql khammond$ sqlite3 -column -header ex2.db
+SQLite version 3.26.0 2018-12-01 12:34:55
+Enter ".help" for usage hints.
+sqlite> select * from person where first_name != "Hasib";
+id          first_name  last_name   age       
+----------  ----------  ----------  ----------
+0           Kelly       Hammond     48        
+2           Kim         Roessler    50        
+sqlite> select pet.id, pet.nickname
+   ...> from pet, person_pet, person
+   ...> where
+   ...> pet.id = person_pet.pet_id and 
+   ...> person_pet.person_id = person.id 
+   ...> ;
+id          nickname  
+----------  ----------
+2           Popeye    
+0           Spot      
+1           Fifi      
+sqlite> select pet.id, pet.nickname, person.first_name
+   ...> from pet, person_pet, person
+   ...> where
+   ...> pet.id = person_pet.pet_id and
+   ...> person_pet.person_id = person.id and
+   ...> person.first_name != "Hasib";
+id          nickname    first_name
+----------  ----------  ----------
+2           Popeye      Kelly     
+1           Fifi        Kim       
+sqlite> .quit
+FL3568:sql khammond$ sqlite3 ex2.db < ex2.sql
+Error: near line 3: table person already exists
+Error: near line 10: table pet already exists
+Error: near line 18: table person_pet already exists
+Error: near line 24: UNIQUE constraint failed: person.id
+Error: near line 25: UNIQUE constraint failed: person.id
+Error: near line 26: UNIQUE constraint failed: person.id
+Error: near line 29: UNIQUE constraint failed: pet.id
+Error: near line 30: UNIQUE constraint failed: pet.id
+Error: near line 31: UNIQUE constraint failed: pet.id
+FL3568:sql khammond$ sqlite3 ex6.db < ex2.sql
+FL3568:sql khammond$ sqlite3 ex6.db
+SQLite version 3.26.0 2018-12-01 12:34:55
+Enter ".help" for usage hints.
+sqlite> get * from person
+   ...> ;
+Error: near "get": syntax error
+sqlite> select * from person;
+0|Kelly|Hammond|48
+1|Hasib|Ikramullah|43
+2|Kim|Roessler|50
+3|Martha|Hammond|78
+sqlite> .quit
+FL3568:sql khammond$ sqlite3 ex.6.db -column -header
+SQLite version 3.26.0 2018-12-01 12:34:55
+Enter ".help" for usage hints.
+sqlite> select * from person
+   ...> ;
+Error: no such table: person
+sqlite> .schema
+sqlite> ;
+sqlite> .quit
+FL3568:sql khammond$ sqlite3 -column -header ex6.db
+SQLite version 3.26.0 2018-12-01 12:34:55
+Enter ".help" for usage hints.
+sqlite> select * from person
+   ...> ;
+id          first_name  last_name   age       
+----------  ----------  ----------  ----------
+0           Kelly       Hammond     48        
+1           Hasib       Ikramullah  43        
+2           Kim         Roessler    50        
+3           Martha      Hammond     78        
+sqlite> select ped.id, pet.name, pet.age, pet.dead
+   ...> from pet, ;
+Error: near ";": syntax error
+sqlite> select pet.id, pet.nickname, person.first_name
+   ...> from pet, person_pet, person
+   ...> where pet.id = person_pet.pet_id and
+   ...> person.id = person.pet.person_id;
+Error: no such column: person.pet.person_id
+sqlite> select pet.id, pet.nickname, person.first_name
+   ...> from pet, person_pet, person
+   ...> where pet.id = person_pet.pet_id and
+   ...> person.id = person_pet.person_id;
+id          nickname    first_name
+----------  ----------  ----------
+2           Popeye      Kelly     
+0           Spot        Hasib     
+1           Fifi        Kim       
+2           Popeye      Martha    
+sqlite> 
