@@ -2,7 +2,7 @@
 
 ## Week Two (1/30 to 2/6)
 
-This week, I reminded myself that I'm likely to forget what we learn in class if I don't practice it every day. So, I took a few minutes every morning when I first logged on to review the command line, navigating around my computer.
+Overall: This week, I reminded myself that I'm likely to forget what we learn in class if I don't practice it every day. So, I took a few minutes every morning when I first logged on to review the command line, navigating around my computer.
 
 Hour 1: I spread this hour over the course of the week, reviewing the basic command line commands of pwd, cd (with specific directory names, / , and ~), ls, and the handy tab and up arrow shortcuts every day, just so they became habit.
 
@@ -154,7 +154,7 @@ Hours 9 and 10: Eager to understand how to instantiate objects from user-driven 
 
 ## Week Nine (3/21 to 3/27)
 
-Overall: 
+Overall: For the first time in this course, I found myself completely lost this week. Part of that was because I was juggling family obligations and my technical hours, but most of it was because I radically misunderstood the big-picture architecture of SQL. In lab hour 4, I finally figured out the root of my misconception, and SQL started not only to make real sense but to promise significant power. 
 
 Hour 1: Returning to my theater program, I began to work on the ability for the user to specify the seating capacity of each level of her theater, wishing I knew how to make a small program to create the possible seats and then my class-oriented program to assign those possible seats to users who purchased them. Fortunately, I looked at what was on deck for this upcoming week, SQL, and it seemed to be the missing link (literally and figuratively). 
 
@@ -166,5 +166,36 @@ Hour 4: Turns out I am an idiot. After my hour+ of frustration with first few ch
 
 Hour 5: SQL is going very slowly. While I'm thrilled, now, that I have the easy editable environment of the text editor, I still find it very hard not to see the data in the database other than through selecting it in terninal. However, I can see how incredibly searchable data gets, just through the select command and some boolean operators or sub-selections. Further, the table output in terminal (when formatted with -column -headings) throws me back to printouts I'd seen from decades back--not of my work, but here and there. Cool. I've made it to exercise 7, finally, but I am still relying a bit too heavily on the videos to surpass my weak understanding of the slowly emerging big picture. 
 
-Note: I've been helping my family for the last week, so I have only managed half of my technical hours this week. I will make it up over the next week or two, indicating them as, for example, "Week 9 make-up hour 6."
+Make-up Hour 6: Had a jolt of energy after our class, so I decided to see if I could build a sql database from memory. Did pretty well, creating (no surprise) a database with a table of a few of my students (id, first and last name, and section), a smattering of assignments (id, date due, title, possible points), and what I think Shaw called a "relation" table linking the kid to the assignment AND providing the points possible. I was able to make it run after fixing some syntax errors and learned that thinking through the title of a table really matters. (For example, I called the first table students, plural, and then kept trying to retrieve student.id or student.name, thinking only of a singular student. Argh.) I was able to CR of CRUD pretty well, which felt pretty good, pulling, for example, the student name, assignment title, and grade of any piece of work earning above a 65. 
+
+Note: I traveled to help my family this week, so I only managed half of my technical hours. I will make it up over the next week or two, indicating them with "Make-Up" before the hour, as I did for Hour 6 above.
+
+Note to myself: practice sub-selecting
+
+
+## Week Ten (3/28 to 4/3)
+
+Overall: Dove into Flask this week. Loved seeing the fuctionality. It's easy to connect how the small projects I was led to create could scale to the types of web apps I use regularly. I did find it incredibly hard to troubleshoot, since the tutorial I started with relied on a "just type it and you'll learn about it later" approach. On a side note, I was thrilled to find that my brain must have been processing SQL in the background. I found creating my own database even after over a week's gap, seemed wonderfully logical.
+
+Hour 1: Dove into Flask using Corey Schafer's intro video. Was able to successfully run and alter the simple sample code Flask provides on its website. (See the FlaskBlog folder for the work.) Really enjoyed the speed of generating the pages, though I'll admit that I am simply trusting (without understanding) code phrases such as __name__ and @app... Learned a little about local hosting and running a server in debugging mode. 
+
+Hour 2: Continued to work building in greater complexity with templates. Nice to see that our HTML and CSS practice will still be useful here. Played around with the Jinja2 code that is like liquid in Jekyll to create loops to display blog posts. Watched Corey Schafer's second video (a half hour long), taking notes and replicating his actions. 
+
+Hour 3: Continued with Flask to build in forms. I'm continuing to do more dictation than actual learning, since much of what I'm doing is importing capabilities rather than creating them myself. Further, Corey Schafer (whose videos I've enjoyed until now) keeps saying that I don't have to understand a given concept (like a secret key), but I should just put it in for now. Still, it is satisfying to see the forms and the CSS working smoothly, and I can at least figure out on my own how to create slightly modified pages.
+
+Hour 4: More Flask. Continued to work through the forms tutorial, creating a registration and login page, adding validation and error messages. All is well except for ONE DAMN THING, which I can't figure out. Registration is not successful. I get "invalid field name 'Password' when I try to register. All other fields work great--cuing entry errors. And, I can't figure it out, even though I've compared my code LINE BY LINE to Schafer's (he posts the code for his projects in a GitHub repository). Aaaaaaaaaaaaaaaaaaaaaaargh! Zounds! Egad! This is madness! (No, this is Sparta.)
+
+Hour 5: Still trouble shooting, for the love of God. After a good night's sleep I went through Schafer's code again, line by line. EUREKA!!! I had capitalized the variable password in one instance in the dang code. Geesh.
+
+Hour 6: Started to watch the next Schafer video about setting up a SQLAlchemy database for the site, but ultimately decided that I was getting in over my head without understanding the foundations of Flask. (Though I will say that I'm starting to be able to predict structures a little ahead of the tutorials.) Started the Programming Historian tutorial on building a distant reading API. LOVED it! Much simpler, and I appreciate the line-by-line explanations after each bit of additional functionality. Embarassed that I hadn't realized that I could make a list of dictionaries, and that dictionaries can represent data from a single item. 
+
+Hour 7: Continued working with the Programming Historian tutorial and looked into RESTful architecture a little. Super helpful to think through designing with an eye toward expansion and maintenance of a resource--will help me with my goal to code leanly. I'm thrilled to see the SQL get syntax that I learned last week.
+
+Hour 8: Finished the tutorial. And hey! Patrick! You are the programming historian? Go you! Moved to another Patrick resource -- the "Prototype Twitter Clone."  Did the reading there (and think the pun of Chirper is hilarious), but aside from the three text pages, I didn't find tutorial text to run me through the process. Clearly, I'm missing something obvious. So, I went back to my sci-fi first-sentence API to review and reinforce what I learned. 
+
+Hour 9: Tried to apply what I'd learned by creating from scratch a web app that allows users to search a database of American presidents. Successfully (though peeking at old code) created the .sql code and generated the database. Successfully queried the database in terminal with simple commands such as SELECT * from presidents. Was not successful with the .py code, though I mimicked line-by-line the successful sci-fi archive. Tried troubleshooting by chaning file names (for example, I didn't know if the folder had to be named api and if the python script had to be titled api.py), but no manipulation of those variables ran the app. I can think of only two differences between my version and the tutorials: file structure (my folders don't mimic nesting suggested by the slashes in the app.routes) and the number of filter variables. But, it's too late in the evening for me to continue to troubleshoot.
+
+Hour 10: I don't know if this is good news or bad news, but now my sci-fi archive doesn't work. The app runs (which isn't true for the presidential app), but the database isn't getting accessed, as a query yeilds no jsonified results. Oddly, this is comforting, as at least two apps with nearly identical code almost identically don't work. 
+
+
 
