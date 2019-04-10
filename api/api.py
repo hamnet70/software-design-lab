@@ -1,8 +1,8 @@
-import flask
-from flask import request, jsonify
+#import flask
+from flask import Flask, request, jsonify
 import sqlite3
 
-app = flask.Flask(__name__)
+app = Flask(__name__)
 app.config["DEBUG"] = True
 
 def dict_factory(cursor, row):

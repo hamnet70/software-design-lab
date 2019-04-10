@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+  <h1>US Presidents Database</h1>
+  <p>A searchable archive of stuff you probably already know. Enjoy.</p>
+  <br>
+
+  <p><b>A few presidents you'll find:</b></p>
+
+  {% for president in presidents %}
+  <p>President {{ president.o }} was {{ president.firstname }} {{ president.lastname }}.
+    {% if president.terms==1 %}
+      He served {{ president.terms }} term and was married to {{ president.wife}}.
+    {% else %}
+      He served {{ president.terms }} terms and was married to {{ president.wife }}.
+    {% endif %}
+  </p> 
+  {% endfor %}
+
+    
+{% endblock %}
