@@ -200,7 +200,7 @@ Hour 10: I don't know if this is good news or bad news, but now my sci-fi archiv
 
 ## Week Eleven (4/4 to 4/10)
 
-Overall: 10:30
+Overall: This week was split between flask and our software development project. This week was deeply satisfying as I made some breakthroughs and got my presidents web app working. Hooray!
 
 Hour 1: I decided that rather than continue to debug my presidents program, I'd create a second from scratch following the Chirper model we saw in class: starting with the simple API and adding increased functionality. Trying as much as I could not to look, I got tripped up by some mistakes that I'm glad I've seen now (such as using double quotes in an img src tag that was inside double quotes of a return statement). Hopefully, that'll increase my ability to debug my own stuff.
 
