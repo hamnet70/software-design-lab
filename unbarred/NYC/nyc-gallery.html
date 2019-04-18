@@ -1,0 +1,238 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    color: #D2FDFF;
+    background-color: #303C6C;
+    margin: 5%;
+    }
+
+h1 {
+  color: #FFFFFF;
+}
+
+div.gallery {
+  border: 1
+  px solid #303C6C;
+}
+
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 2px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 2px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F4976C;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #303C6C;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #FBEA86;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<h1>Image Browser</h1>
+<p>To use an image in your digital humanities project, save it to your project folder. You can save the small image here, or click on an image to see it full size and save it from there.</p>
+
+<ul>
+    <li><a href="nyc-gallery.html">New York City</a></li>
+    <li><a href="#news">People</a></li>
+    <li><a href="#contact">Animals</a></li>
+    <li><a href="#about">Cars</a></li>
+  </ul>
+
+<!--The code below was deleted because the images were different sizes than the others, making gaps in the gallery.
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="bronx.jpg">
+      <img src="bronx.jpg" alt="Bronx" width="600" height="400">
+    </a>
+  </div>
+</div>-->
+
+
+<!--<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="brooklyn_bridge.jpg">
+      <img src="brooklyn_bridge.jpg" alt="Brooklyn Bridge" width="600" height="400">
+    </a>
+  </div>
+</div>-->
+
+<!--<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="brooklyn.jpg">
+      <img src="brooklyn.jpg" alt="Brooklyn" width="600" height="400">
+    </a>
+  </div>
+</div>-->
+
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="radio-city-music-hall.jpg">
+        <img src="radio-city-music-hall.jpg" alt="Radio City Music Hall" width="600" height="400">
+      </a>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="skyline.jpg">
+        <img src="skyline.jpg" alt="NYC Skyline" width="600" height="400">
+      </a>
+    </div>
+  </div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="garage.jpg">
+      <img src="garage.jpg" alt="Garage" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="castles.jpg">
+      <img src="castles.jpg" alt="Castles" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="central-park.jpg">
+      <img src="central-park.jpg" alt="Central Park" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="coney-island.jpg">
+      <img src="coney-island.jpg" alt="Coney Island" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="graffiti.jpg">
+        <img src="graffiti.jpg" alt="Graffiti" width="600" height="400">
+      </a>
+    </div>
+  </div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="manhattan2.jpg">
+      <img src="manhattan2.jpg" alt="Manhattan 2" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="street-art.jpg">
+      <img src="street-art.jpg" alt="Street Art" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="subway1.jpg">
+      <img src="subway1.jpg" alt="Subway 1 Train" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="subway7.jpg">
+      <img src="subway7.jpg" alt="Subway 7 Train" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="taxi-cab.jpg">
+      <img src="taxi-cab.jpg" alt="Taxi" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+
+
+<div class="clearfix"></div>
+
+<p>Note that this page is built with "responsive design"&mdash;a layout that responds to the size of 
+  the screen or viewing area. To see it in action, resize this window by bringing your cursor to the lower, 
+  right-hand corner of the page. When your cursor turns into a two-headed arrow, click and drag the window to make it smaller, 
+  and watch the gallery respond.</p>
+
+</body>
+</html>

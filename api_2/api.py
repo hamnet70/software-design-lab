@@ -103,8 +103,24 @@ def roll():
     cur.execute("SELECT * FROM blogs;")
     blogs = cur.fetchall()
 
-    # now we give our chirps data to the template so that it can be displayed
     return render_template('blog_roll.html', blogs=blogs)
+
+@app.route('/signup', methods=["GET", "POST"])
+def signup():
+    if request.method == 'POST':
+        username = request.form['username']
+        passwrd = request.form['passwrd']
+        passwrd_renter = request.form['passwrd_reenter']
+
+        conn = sqlite3.connect("presidents4.db")
+        conn.row_factory = dict_factory
+        cur = conn.cursor()
+        cur.execute("INSERT INTO users (username, passwrd) VALUES (?, ?)",
+                    (username, passwrd))
+        conn.commit()
+        return redirect(url_for("blog_roll"))
+   
+    return render_template("signup.html")
 
 
 @app.route('/pic')

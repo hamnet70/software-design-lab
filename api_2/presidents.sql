@@ -16,6 +16,12 @@ CREATE TABLE blogs (
     post TEXT
     );
 
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY,
+    username TEXT,
+    passwrd TEXT    
+    );
+
 insert into presidents values (0, "George", "Washington", 2, 1, "Martha");
 insert into presidents values (1, "John", "Adams", 1, 2, "Abigail");
 insert into presidents values (2, "Thomas", "Jefferson", 2, 3, "None");

@@ -223,6 +223,27 @@ Hour 9: Continued research into web design and learned a ton. My favorite was th
 Hour 10: Reviewed Quinn's wireframe revisions and am eager to hear Sabina's thoughts this weekend. Continued my research on accessibility. This was not a full hour.
 
 
+## Week Twelve (4/11 to 4/17)
+
+Overall: This week was devoted to targeting my exploration and practice toward my software project, though I did practice my SQL skills to keep them sharp. I am finding that, as I work on my software project, I am beginning to conceptualize well--imagining which tools we've learned so far that will work and won't work. But, I'm also finding that I am overthinking the content of the project rather than focusing on MVP functionality.
+
+Hour 1: Scoured the web for HTML emulators and used the inspect element to deconstruct w3school's version so I could begin to imagine what creating such an emulator might do for our software project. With Sabina's choice of web palette, I was able to start to put together background/text combos that would stay WCAG AAA compliant--a goal of mine.
+
+Hour 2: Took a break from the project to practice SQL using the DHRI tutorial you provided. LOVED hooking up the NYPL's csv data to a SQL database. Got a little overwhelmed thinking about tidying data.
+
+Hour 3: Returned to the software project to review Quinn's wireframe edits and make more suggestions. Also broke down our work from this week into a script through which to walk Sabina. Worked to define two layers of the project--one that can exist purely on a USB stick with minimal features and one that could work if certain factors are in place.
+
+Hours 4 and 5: Videoconferenced with Sabina and Quinn to review the wireframe, get feedback, and discuss next steps. Stayed on with Quinn to divvy up this week's workload, then collected images for the library component of the website.
+
+Hour 6: Began coding the CSS for the gallery. Adapting code from w3schools to keep the design responsive, since we have no idea at this point what hardware Sabina's students will be using. Already 14 pics in, and there's lots of work to do, though the page functionality is pretty good.
+
+Hour 7: Continuing to alter the code. Accidentally learned that cmd+z after pasting code will unindent! Super helpful. Learned that for this particular gallery, the images needed to be all the same aspect ratio, so I thinned the collection. I commented out a few of the deleted images so students to explore. Added teaching text to help students use the site. 
+
+Hour 8: Still customizing the image gallery. I'm learning a lot and rejecting a lot. For example, I made up my own div class for the first time, which I called a vis_block. Ultimately thought it looked bad, both combined with the responsive class and on its own. Also learned html for an emdash, which is satisfying. I'm not terribly pleased with how things look, but the fuctionality is there. I also see that things could be significantly more efficient if we were using Jeckyll, but we had a good reason not to use it: the course this page will be used in is focusing on HTML and CSS, so we wanted to model the tools.
+
+Hour 9+: Finished the gallery, and got to play around with horizontal nav bar CSS. Realized that my current structure wasn't scalable, so created a second gallery to figure out how I might best streamline. Downloaded additional royalty/credit-free images for a new "people" gallery, in addition to the NYC one. 
+
+
 
 
 
