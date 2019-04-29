@@ -166,11 +166,16 @@ Hour 4: Turns out I am an idiot. After my hour+ of frustration with first few ch
 
 Hour 5: SQL is going very slowly. While I'm thrilled, now, that I have the easy editable environment of the text editor, I still find it very hard not to see the data in the database other than through selecting it in terninal. However, I can see how incredibly searchable data gets, just through the select command and some boolean operators or sub-selections. Further, the table output in terminal (when formatted with -column -headings) throws me back to printouts I'd seen from decades back--not of my work, but here and there. Cool. I've made it to exercise 7, finally, but I am still relying a bit too heavily on the videos to surpass my weak understanding of the slowly emerging big picture. 
 
+Note: I traveled to help my family this week, so I only managed half of my technical hours. I will make it up over the remaining weeks, indicating them with "Make-Up" before the hour.
+
 Make-up Hour 6: Had a jolt of energy after our class, so I decided to see if I could build a sql database from memory. Did pretty well, creating (no surprise) a database with a table of a few of my students (id, first and last name, and section), a smattering of assignments (id, date due, title, possible points), and what I think Shaw called a "relation" table linking the kid to the assignment AND providing the points possible. I was able to make it run after fixing some syntax errors and learned that thinking through the title of a table really matters. (For example, I called the first table students, plural, and then kept trying to retrieve student.id or student.name, thinking only of a singular student. Argh.) I was able to CR of CRUD pretty well, which felt pretty good, pulling, for example, the student name, assignment title, and grade of any piece of work earning above a 65. 
 
-Note: I traveled to help my family this week, so I only managed half of my technical hours. I will make it up over the next week or two, indicating them with "Make-Up" before the hour, as I did for Hour 6 above.
+Make-up Hour 7 and 8: (Occurred 4/28, so I am now well into my client project.) Applied the new homepage CSS to the second image library of NYC pics, updated the picture links (what a fool I was to create this before we decided on a homepage design). Created a new page (so easy with CSS!) for Accessibility and Safety info for Sabina's review. Skype call with Quinn and then Quinn and Sabina.
 
-Note to myself: practice sub-selecting
+Make-up Hour 9: Made corrections to the pages based on our Skype call: adding an explicit home button, changing the Why This Class to Why DH button. 
+What a total pain in the ass that turned out to be, since Sabina and Quinn wanted to go with buttons rather than a horizontal nav bar.
+
+Make-up Hour 10: Created the Peek at the Code page and had fun adding comments and figuring out why the < pre > tags wouldn't work to render the html. Exciting to learn about & l t ; work around. Uploaded all to the live site for review.
 
 
 ## Week Ten (3/28 to 4/3)
@@ -241,7 +246,36 @@ Hour 7: Continuing to alter the code. Accidentally learned that cmd+z after past
 
 Hour 8: Still customizing the image gallery. I'm learning a lot and rejecting a lot. For example, I made up my own div class for the first time, which I called a vis_block. Ultimately thought it looked bad, both combined with the responsive class and on its own. Also learned html for an emdash, which is satisfying. I'm not terribly pleased with how things look, but the fuctionality is there. I also see that things could be significantly more efficient if we were using Jeckyll, but we had a good reason not to use it: the course this page will be used in is focusing on HTML and CSS, so we wanted to model the tools.
 
-Hour 9+: Finished the gallery, and got to play around with horizontal nav bar CSS. Realized that my current structure wasn't scalable, so created a second gallery to figure out how I might best streamline. Downloaded additional royalty/credit-free images for a new "people" gallery, in addition to the NYC one. 
+Hour 9: Finished the gallery, and got to play around with horizontal nav bar CSS. Realized that my current structure wasn't scalable, so created a second gallery to figure out how I might best streamline. Downloaded additional royalty/credit-free images for a new "people" gallery, in addition to the NYC one. 
+
+Hour 10: Read w3c
+
+
+## Week Thirteen (4/18 to 5/1)
+
+Overall: This week was all about html and CSS, and I found that a lot of our early instruction returned to me or at least grounded me to make sense out of the sites I consulted. I was pleased that I could mimic nearly flawlessly Quinn's mock-up illustration of the homepage. CSS is truly a lifesaver, and while I've just used it for two pages, any others of the same type (such as additional image libraries) should be both easy and less error prone. Despite all of these successes, I continue to make some dumb mistakes, like using a colon instead of a semicolon to end a CSS style attribute or like making a link to a file that isn't in the folder my page is in. Just reminds me what a rookie I still am, despite my significantly expanding toolbox! Feel free to visit the site as it is thus far: http://u777316952.hostingerapp.com/Unbarred/
+
+Hour 1: Eager to make the galleries accessible, I reviewed and tried tests from w3c's Accessibility page. Missed some obvious things (I had not included a title in my <head> section), and really struggled to get accustomed to the Voice Over options. I have huge respect for your patience Patrick! Found that my titles were not consistently descriptive, so I altered them.
+
+Hour 2: Eager to modernize the gallery pages, I found a customizable svg background generator and created a few options using Sabina's chosen color palette. Tried to set up some hosting so Quinn (and eventually Sabina) can preview and give feedback. Took awhile. I had an old account at Hostinger which I bought and fumbled with for a project last semester. I think I let something lapse.
+
+Hour 3: Skype call with Quinn to review her homepage protoype and my image galleries. Updated the image galleries (now called image libraries) tbased on our conversation and emailed Sabina with the three pieces to review: our updated wireframe, my image libraries, and Quinn's homepage prototype. I see now why fleshing things out on paper is important: I will have to rename my files and hyperlinks to reflect the changes we are making now.
+
+Hour 4: Per client feedbac, added language to image libraries to indicate that they are, indeed, royalty- and credit-free. Client Skype call to refine design and set next steps, followed by team meeting to decide next steps.
+
+Hour 5: Started coding the homepage HTML and CSS. Sabina's choices (such as separate nav buttons instead of a bar) make this a challenge, but thanks to w3schools, I am able to find and adapt a lot of code. I recreated Quinn's word art to have it sync with the color palatte Sabina chose. I am also learning to come up with creative solutions, for example, creating a separate row for the dang buttons so that I can use margins to space them out.
+
+Hour 6: Loving CSS, as it allows me to change looks quickly without doing a lot of coding. I'm also starting to think through file structure for the webpage--what needs to be in separate folders for easy, scalable change out. Again, the design choices Sabina has made complicate all of this, and I'll need to find a solution for the typewriter font she wants. My background gradients aren't working for the headers and footers, so I'll need to figure that out in Hour 7.
+
+Hour 7: Played around with Adobe Illustrator to learn how to make the gradient graphics, then added them to the style sheet as the header and footer backgrounds.
+
+Hour 8: Worked on the final column of the homepage with the vertical nav bar that takes students to the syllabus, readings, and lessons. Very satisfying to be able to manipulate backgrounds, padding, and margins to make the element seem complete and well designed. While I'm not fond of the look of the design, I am pleased that I've been able to duplicate nearly flawlessly the mock-up Quinn provided that Sabina loved.
+
+Hour 9: Per Sabina's request, I applied the CSS stylesheet of the homepage to the image libraries (which broke my heart a bit, since I loved the original design and the new one doesn't match my aesthetic). Had to reorganize the file structure so that the stylesheet and main pages all lived in the same folder, which required updating the photos with relative links that pointed to the image folder for that category. Painstaking.
+
+Hour 10: Uploaded the site and wrote to Quinn for feedback. My folder structure on Hostinger didn't match the rearranged folder structure on my laptop, so it took lots of fixing relative links and reloading. We were forced to stick with html and CSS because the site has to work with no internet and because Sabina wants the students to be able to decode the code. But, I am truly understanding the genius of Jeckyll and Bootstrap, since we could go so far so fast with content holders and templates! Dang you prison!
+
+
 
 
 
