@@ -276,6 +276,29 @@ Hour 9: Per Sabina's request, I applied the CSS stylesheet of the homepage to th
 Hour 10: Uploaded the site and wrote to Quinn for feedback. My folder structure on Hostinger didn't match the rearranged folder structure on my laptop, so it took lots of fixing relative links and reloading. We were forced to stick with html and CSS because the site has to work with no internet and because Sabina wants the students to be able to decode the code. But, I am truly understanding the genius of Jeckyll and Bootstrap, since we could go so far so fast with content holders and templates! Dang you prison!
 
 
+## Week Fourteen (5/1 to 5/8)
+
+Overall: This week was devoted to finishing my software project and exploring some of the list comprehension techniques we explored in class during our penultimate meeting.
+
+Hour 1: Attended to Sabina's most recent requests: coding our About Us page, making changes to the home page buttons, editing the text on the Access and Safety page. Uploaded the finished work to the live site on Hostinger and, of course, found little things I had to change, such as the dash Sabina had included in her profile.
+
+Hour 2: Tried a list comprehension video tutorial from Real Python. 
+
+Hour 3: Skype call with Sabina and Quinn to review new additions.
+
+Hour 4: Created About Us page with Quinn's avatars. Working with homemade graphics was more challenging than I'd imagined, because the files needed to
+be resized and the resolution needed to be altered. With a self-imposed deadline of Wednesday for delivering the project to Sabina on Wednesday on a USB, I found myself MacGuyvering some code to make things look right. (For example, in order to get a div class container to recognize the end of 
+content, I had to place an invisible a after the ending div tag.) I also messed around with our CSS, creating a new class called "main" and futzing
+with margins and padding. The design, outside of the galleries, is not 100% responsive. I'll clean up all of these work-arounds later in the summer, but I can really see my inexperience shining through in moments like these. 
+
+Hour 5: Proofed the site to fix the many inconsistencies, such as button links and subtitles. Also replaced characters that HTML doesn't recognize as
+we've pasted Sabina's text into Visual Studio Code. Read an interesting debate on whether to use names or numbers for these special characters. 
+
+Hour 6: Uploaded the myriad new and fixed pages to Hostinger. Exciting to see the site grow.
+
+Hour 7: Tested the site on two ten-year-old laptops--a 2009 Toshiba Portege and a 2009 iBook--all from a USB stick to simulate how Sabina would be uploading the site. Don't laugh that this took long. It took quite a long time for each laptop to boot up, which I had to do twice so that I could record the browser operating systems for Sabina. 
+
+
 
 
 

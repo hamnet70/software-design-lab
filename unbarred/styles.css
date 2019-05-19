@@ -1,0 +1,232 @@
+
+
+* {
+    box-sizing: border-box;
+  }
+
+div.tight {
+    line-height: 80%;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    background-image: url("gradient.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+h3 {
+  color:#303C6C
+}
+  
+  .button {
+    background-color: #B4DFE5;
+    border: none;
+    color: #303C6C;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    float: center;
+
+  }
+
+  .btn-group button {
+    background-color: #B4DFE5; 
+    border: 0px;
+    color: #303C6C; 
+    padding: 12px; 
+    text-decoration: none;
+    margin: 15px;
+    float: center; 
+    style: "width:100%";
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #303C6C;
+    color: #B4DFE5;
+  }
+
+.soft {
+    background-color: #B4DFE5;
+    border: none;
+    color: #303C6C;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+
+  }
+
+
+.column {
+    float: left;
+    padding: 25px;
+    background-color: #FFFFFF;
+}
+
+.column:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column.side {
+    width: 25%;
+}
+  
+.column.middle {
+    width: 50%;
+}
+
+.main {
+  margin: 0% 5% 2% 5%;
+  width: 100%;
+}
+
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+}
+
+.footer {
+    background-image: url("gradient.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+ul.reg {
+  list-style-type: disc;
+  margin: 20px;
+  padding: 10px;
+  width: auto;
+  background-color: #FFFFFF;
+  font-size: auto;
+}
+
+li.reg {
+  text-align: left;
+  padding: none;
+  margin: none;
+}
+
+ul {
+      list-style-type: none;
+      margin: 10px;
+      padding: 30px;
+      width: 200px;
+      background-color: #303C6C;
+      font-size: 20px;
+}
+
+li a{
+      display: block;
+      color: #B4DFE5;
+      padding 20px 30px;
+      margin: 10px;
+      text-decoration: none;
+}
+
+li {
+      text-align: center;
+}
+
+li a.active {
+      background-color: #F4976C;
+      color: white;
+}
+
+li a:hover {
+      background-color: #F4976C;
+      color: white;
+}
+
+
+
+
+
+div.gallery {
+    border: 1
+    px solid #303C6C;
+  }
+  
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 2px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+

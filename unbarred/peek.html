@@ -1,0 +1,98 @@
+<!--Congratulations! You are now looking at the code behind this web site. Good coders often leave comments to help both themselves and
+users understand the purpose of blocks of code. We've provided more comments than usual on this page, so you could really get a sense of
+what nearly every line means. Notice the tags (the < and ! and -- bfore the text and the -- and > after it. Those keys turn the text in
+between them into hidden comments that don't get displayed on the web page.-->
+
+<!--The line below simply lets the web browser know that this is an html document.-->
+<!DOCTYPE html>
+
+<!--Every web page begins with the <html> tag and ends with the </html> tag to let the browser know where the page begins and ends.-->
+<html>
+
+
+<!--HTML pages have "heads" and "bodies." Nothing in the "head" section is displayed on the page, but the information in the head tags
+does have an effect on how the page looks. For example, in this "head" section, which starts with the tag <head> and ends with the closing
+tag </head>, there information on the title of the page (which appears in the browser tab) and the stylesheet that guides the look of the page.-->
+<head>
+
+    <!--This title appears in the browser, usually on the browser tab. It does not display in the actual page.-->
+    <title>Peek at the Code</title>
+
+    <!--This tag connects this page to a stylesheet we created that includes how the headers should look, what the text size is, and how
+    buttons should appear.-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        p {
+            margin: 5%;
+        }
+    </style>
+
+</head>
+
+<!--Everything between the <body> and </body> tags is displayed on the page.-->
+<body>
+
+<!--The class "header" is defined in our stylesheet. Div simply stands for division. So, we have a division of the page here that holds 
+a header that is filled with a color gradient--that peach color that fades into white. The class "tight" is defined in our stylesheet too, and it 
+just makes the space between lines of text smaller than usual. The <h1></h1> and <h2></h2> refer to "heading 1" and "heading 2." There are six 
+pre-defined heading sizes. Can you guess the tag for "heading 6"?
+
+We use heading tags to distinguish titles, subtitles, and section headings because screen readers used by people with vision impairment, reads them as important elements of the
+page.-->
+<div class="header">
+    <div class="tight">
+        <h1>Peek at the Code</h1>
+    </div>
+</div>
+
+
+<!--The class "row" is defined in our stylesheet, and here, we have further indicated that the contents of this row should be centered. 
+    The "row" class sets up a horizontal division of text with a white background.The class "button" is defined in the stylesheet as well, 
+    specifying the buttons' background and text colors as well as how much space (padding) is around the text and how much space (margin) is
+    around the outside of the button. Note that we have added here that the width of the button should be about a fifth of the page.-->
+
+<div class="row" style="text-align:center">
+    <a href="index.html" class="button" style="width:20%; margin:20px">Home</a>
+    <a href="why.html" class="button" style="width:20%; margin:20px">Why DH?</a>
+    <a href="library-people.html" class="button" style="width:20%; margin:20px">My Library</a>
+    <a href="connect.html" class="button" style="width:20%; margin:20px">Connect</a>
+</div>
+
+<!--You are probably noticing that coders indent a lot. In HTML, that's mostly for them to be able to read the code more easily. But, in
+programs you'll use later, such as Python and SQL, indenting is a key to helping the processor understand commands. So, might as well get
+used to it!-->
+<div class="row">
+
+    <!--What do you think the p tags stand for? Take a look at the page again and this code to see if you can figure it out.-->
+    <!--While the English alphabet and most punctuation marks are recognized by web browsers, a few characters are not. Can you find a piece of
+    punctuation in this paragraph that we couldn't just type out?-->
+    <p>One of the first things you'll learn to do is build a webpage in HTML&mdash;the basic code behind the internet. On any webpage, including
+        this one, you can look at the instructions the web developer has written to make the page look the way it does. No matter what web browser
+        you are using, there is a way to see the code. Your instructor can help show you how for the computer you are on now. But, usually, the code can be
+        found by right-clicking on a mouse or two-finger clicking on a trackpad and choosing the equivalent of "View Page Source." Sometimes the option 
+        is available from a View menu or Tools menu at the top of the page.
+    </p>
+
+    <p>As you'll learn in one of your first lessons, HTML uses tags around text to indicate how something should look. For example, if you want
+        to make some words <b>bold</b>, you put a tag with a b (for bold) before them and one with a /b after them to indicate when the bold should
+        start or stop. It would look like this: 
+        <!--Note the weird letters here and compare it to the page as it is displayed. Can you figure out what &lt; and &gt; stand for? The reason
+        we cannot just type bold tags here is because the web brower will do its job and display the words "bold words" in bold!-->
+        
+            &lt;b&gt;bold words&lt;/b&gt; but it would display like this <b>bold words</b>. See?
+    </p>
+
+    <p>Web developers often provide comments to explain a chunk of their code. We've left lots of comments for you to see what the code behind
+        this page looks like. Before you take a peek, try to imagine what's on this page right now that you'll expect to see. 
+    </p>
+
+<!--The class "footer" is define in the stylesheet as a small, gradient-filled rectangle that spans the page.-->
+<div class="footer">
+</div>
+
+<!--The </body> and </html> are always the last two tags of the page. Without them, the page won't load, because the browser will think that
+there is more to display-->
+
+</body>
+</html>
